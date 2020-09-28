@@ -1,4 +1,5 @@
 import React from 'react';
+import { DragDropContext, Droppable, Draggable } from 'react-beautiful-dnd';
 import './App.css';
 
 const finalSpaceCharacters = [
@@ -34,20 +35,31 @@ function App() {
     <div className="App">
       <header className="App-header">
         <h1>Final Space Characters</h1>
-        <ul className="characters">
-          {finalSpaceCharacters.map(({id, name, thumb}) => {
-            return (
-              <li key={id}>
-                <div className="characters-thumb">
-                  <img src={thumb} alt={`${name} Thumb`} />
-                </div>
-                <p>
-                  { name }
-                </p>
-              </li>
-            );
-          })}
-        </ul>
+        <DragDropContext>
+          <Droppable droppableId="characters">
+            {(provided) => (
+              <ul className="characters" {...provided.droppableProps} ref={provided.innerRef}>
+                {finalSpaceCharacters.map(({id, name, thumb}, index) => {
+                  return (
+                    <Draggable key={id} draggableId={id} index={index}>
+                      {(provided) => (
+                        <li ref={provided.innerRef} {...provided.draggableProps} {...provided.dragHandleProps}>
+                          <div className="characters-thumb">
+                            <img src={thumb} alt={`${name} Thumb`} />
+                          </div>
+                          <p>
+                            { name }
+                          </p>
+                        </li>
+                      )}
+                    </Draggable>
+                  );
+                })}
+                {provided.placeholder}
+              </ul>
+            )}
+          </Droppable>
+        </DragDropContext>
       </header>
       <p>
         Images from <a href="https://final-space.fandom.com/wiki/Final_Space_Wiki">Final Space Wiki</a>

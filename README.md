@@ -1,4 +1,4 @@
-#  Demo
+# Draggable Character List React Demo
 
 Demo for tutorials that help you learn how to use React Beautiful DnD to create a draggable list of Final Space characters.
 

@@ -1,14 +1,17 @@
-# Draggable Character List React Demo
+# Draggable Final Space Character List with React Beautiful DnD
 
-Demo for tutorials that help you learn how to use React Beautiful DnD to create a draggable list of Final Space characters.
+Demo for tutorial [How to Add Drag and Drop in React with React Beautiful DnD](https://www.youtube.com/watch?v=aYZRRyukuIw)
 
-Learn how to create your own with [How to Add Drag and Drop in React with React Beautiful DnD](https://www.youtube.com/watch?v=aYZRRyukuIw)
+🚀 See Demo: https://my-final-space-characters.netlify.app/
 
-## Getting started locally
-* `yarn install`
-* `yarn start`
-* 🚀
+📝 Article: https://www.freecodecamp.org/news/how-to-add-drag-and-drop-in-react-with-react-beautiful-dnd/
+
+📺 YouTube: https://www.youtube.com/watch?v=aYZRRyukuIw
 
 ## More tutorials and walkthroughs
-* [Follow me on Twitter](https://twitter.com/colbyfayock)
-* [Subscribe on YouTube](https://www.youtube.com/colbyfayock)
+
+🐦 [Follow me on Twitter](https://twitter.com/colbyfayock)
+
+📺 [Subscribe on YouTube](https://www.youtube.com/colbyfayock)
+
+✉️ [Sign Up for My Newsletter](https://colbyfayock.com/newsletter)
